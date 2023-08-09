@@ -186,7 +186,9 @@ Copying audit logs can significantly add to the time it takes to copy an environ
   
 1. The newly created copy environment is placed in administration mode. Only those with System Administrator security roles can sign in and manage the copy environment. Regular users can't sign in and use the copy environment.  
   
-2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
+2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.
+
+3. If production data is copied to the sandbox environment, ensure that sensitive data is not leaked to the developers or vendors by deleting or masking the data. There are tools on the Microsoft AppSource that can help  masking data in the selected tables and columns.
   
 #### Review components 
   
