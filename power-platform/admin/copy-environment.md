@@ -188,8 +188,9 @@ Copying audit logs can significantly add to the time it takes to copy an environ
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.
 
-3. If production data is copied to the sandbox environment, ensure that sensitive data is not leaked to the developers or vendors by deleting or masking the data. There are tools on the Microsoft AppSource that can help  masking data in the selected tables and columns.
-  
+#### Protect sensitive data
+If production data is copied to the sandbox environment, ensure that sensitive data is not leaked to the developers or vendors by deleting or masking the data. There are tools on the Microsoft AppSource that will help  masking data in the selected tables and columns.
+
 #### Review components 
   
  You should review the status of application components in the copy environment with external connections such as Yammer, email, plug-ins, custom workflow activities, etc. Review these and consider what action to take:  
